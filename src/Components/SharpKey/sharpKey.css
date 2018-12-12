@@ -1,0 +1,9 @@
+.SharpKeyContainer {
+  display: flex;
+  background-color: black;
+  width: 67%;
+  height: 60%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}

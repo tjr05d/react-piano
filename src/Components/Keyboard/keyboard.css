@@ -1,0 +1,5 @@
+.KeyboardContainer {
+  display: flex;
+  flex: 2;
+  background-color: gray;
+}

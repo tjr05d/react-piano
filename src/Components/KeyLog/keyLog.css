@@ -1,0 +1,7 @@
+.KeyLogContainer {
+  display: flex;
+  flex: 1;
+  background-color: lightgrey;
+  justify-content: center;
+  align-items: center;
+}
