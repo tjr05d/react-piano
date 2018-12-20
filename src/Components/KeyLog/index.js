@@ -5,7 +5,8 @@ export default class KeyLog extends Component {
   render() {
     return (
       <div className="KeyLogContainer"> 
-        Key Log
+        <h3> Key History: </h3>
+        {this.props.keyHistory}
       </div>
     );
   }

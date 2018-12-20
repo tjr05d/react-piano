@@ -1,6 +1,22 @@
 .ManualEntryContainer {
   display: flex;
+  flex-direction: column;
   flex: 1;
   justify-content: center;
   align-items: center; 
+}
+
+.ManualEntryContainer__form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.form__input {
+  height: 3rem;
+  font-size: 2.5rem;
+}
+
+.form__submit {
+  height: 2rem;
 }

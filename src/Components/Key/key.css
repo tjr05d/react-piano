@@ -2,10 +2,17 @@
   display: flex;
   flex: 1;
   border: 1px solid black;
-  background-color: white;
   align-items: flex-end;
   justify-content: center;
   position: relative;
   overflow: 'visable';
   padding-bottom: 2em;
+}
+
+.key__active {
+  background-color: '';
+}
+
+.key__inactive {
+  background-color: 'white';
 }

@@ -5,28 +5,23 @@ import './key.css';
 export default class Key extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      sharpKeyPosition: {
-        top: 0,
-        right: 0,
-      } 
-    }
+    this.keyPlayed = this.keyPlayed.bind(this);
   }
 
-  componentDidMount() {
-    this.setState({
-      sharpKeyPosition: {
-        top: 0,
-        right: -20,
-        backgroundColor: 'green'
-      } 
-    })
+  keyPlayed(e) {
+    e && e.preventDefault();
+    this.props.keyPlayed(this.props.note);
   }
+
+
   render() {
+    const {active, note, hasSharp } = this.props;
+    const bgColor  = active ? '#B2EBF2' : 'white';
+
     return (
-      <div className="KeyContainer"> 
-        {this.props.note} 
-        {this.props.hasSharp && <SharpKey computedStyles={this.state.sharpKeyPosition}/> }
+      <div className="KeyContainer" onClick={this.keyPlayed} style={{backgroundColor: bgColor}}> 
+        {note}
+        {hasSharp && <SharpKey /> }
       </div>
     );
   }
