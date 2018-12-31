@@ -1,8 +1,22 @@
+h3 {
+  margin: 1em auto;
+}
+
 .KeyLogContainer {
   display: flex;
   flex-direction: column;
   flex: 1;
-  background-color: lightgrey;
-  justify-content: center;
+  background-color:#00838F;
   align-items: center;
+}
+
+.scaleContainer {
+  display: flex;
+  margin-bottom: 2em;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+
+.KeyLog__title {
+  display: flex;
 }

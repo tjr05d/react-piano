@@ -8,11 +8,3 @@
   overflow: 'visable';
   padding-bottom: 2em;
 }
-
-.key__active {
-  background-color: '';
-}
-
-.key__inactive {
-  background-color: 'white';
-}

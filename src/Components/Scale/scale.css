@@ -1,0 +1,31 @@
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  position: relative;
+}
+
+.bar {
+  height: 0.5rem;
+  width: 5em;
+  border-bottom: 0.01em solid black;
+}
+
+.bar:nth-last-of-type(-n+2) {
+  border-bottom: none;
+}
+
+.note {
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  left: 2.25em;
+}
+
+.noteValue {
+  margin-top: 1em;
+  text-align: center; 
+}

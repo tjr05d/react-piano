@@ -2,8 +2,11 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  justify-content: center;
   align-items: center; 
+}
+
+h3 {
+
 }
 
 .ManualEntryContainer__form {
@@ -15,8 +18,48 @@
 .form__input {
   height: 3rem;
   font-size: 2.5rem;
+  border: 0; 
+  border-bottom: 2px solid lightgrey;
+  margin-bottom: 0.5em;
 }
+
+.form__input:focus {
+  border: 0;
+  outline: none;
+  border-bottom: 2px solid #006064;
+  transition: border-bottom 1s; 
+}
+
+
+
 
 .form__submit {
   height: 2rem;
+  width: 25%;
+  margin: 0 auto;
+  background-color: #00838F;
+}
+
+svg {
+ color: lightgrey; 
+}
+
+.form__submit:hover {
+  background-color: #006064;
+  outline: none;
+  transition: background-color 0.5s; 
+}
+
+.form__slider {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.form__slider input {
+  width: 100%;
+}
+
+.form__errorMessage {
+  color: red;
 }
